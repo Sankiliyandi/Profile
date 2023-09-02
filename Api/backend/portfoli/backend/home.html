@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="icon" href="{% static 'backend/WhatsApp Image 2021-11-29 at 6.54.52 AM.jpeg' %}" type="image/jpeg">
+    <script src="https://kit.fontawesome.com/a53a8629e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/back_pic/03/80/06/3757c30a762387b.jpg');
+           
+        }
+        
+        h1,
+        p,
+        h4 {
+            color: white;
+        }
+        
+        p {
+            font-size: 1.5rem;
+        }
+        
+        h3 {
+            color: white;
+        }
+        
+        i {
+            padding: 4px;
+        }
+        
+        .navbar {
+            background-color: black;
+            font-weight: bold;
+        }
+         .navbar-toggler {
+            border-color: white;
+        }
+        
+        .navbar-toggler-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+   {% include 'navbar.html' %}
+    <div class="container p-3 my-3 table-bordered">
+        <div class="row p-3">
+            <div class="col-md-5 p-3">
+                <h1>Hello guys</h1>
+
+                <p>We provide Quality websites and multi-platform flutter applications for you.Lets turn your ideas into reality.Just show your dreams we show it to real world </p>
+                
+
+            </div>
+            <div class="col-md-7 p-3">
+                <img style="width: 200px;height: 200px;" src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container p-3 my-3 table-bordered"><h1>Technologies used</h1>
+                <p><span style="color:blue;">Flutter</span> is an open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase
+
+</p><p>Deploy to multiple devices from a single codebase: mobile, web, desktop, and embedded devices.
+</p>
+<p><span style="color:blue;">Django</span> is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
+
+</p>
+    </div>
+    {% include 'footer.html' %}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

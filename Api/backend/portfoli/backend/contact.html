@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="{% static 'backend/WhatsApp Image 2021-11-29 at 6.54.52 AM.jpeg' %}" type="image/jpeg">
+    <script src="https://kit.fontawesome.com/a53a8629e3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/back_pic/03/80/06/3757c30a762387b.jpg');
+            color: white;
+        }
+        
+        input {
+            border-radius: 10px;
+            padding: 10px;
+        }
+        
+        label {
+            padding: 10px;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            color: white;
+        }
+        marquee{
+            color:blue;
+        }
+        
+        nav {
+            background-color: black;
+            font-weight: bold;
+        }
+        
+        span {
+            color: red;
+        }
+         .navbar-toggler {
+            border-color: white;
+        }
+        
+        .navbar-toggler-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <div class="container my-3 mt-5 mb-5 table-bordered">
+        <div class="text-center p-4">
+            <h1>Students Developers Army</h1>
+            <h3>To learn technologies</h3>
+            <h2>To join our organazation fill the form</h2>
+            <marquee direction="left">come join learn Happy coding</marquee>
+        </div>
+
+    </div>
+    <div class="container my-3 table-bordered">
+        <form onsubmit="return false;" method="post">
+            <h1 class="text-center p-3">Registeration form</h1>
+            <div class="form-row justify-content-between">
+                <div class="col-md-6 pt-3  text-center">
+                    <label for="fname"><b>Firstname</b></label><br>
+                    <input type="text" placeholder="Enter Firstname" name="fname" id="fname" value="">
+                    <span id="mesFN"></span>
+                </div>
+
+                <div class="col-md-6 pt-3  text-center">
+                    <label for="sname"><b>Lastname</b></label><br>
+                    <input type="text" placeholder="Enter Secondname" name="sname" id="lname" value="">
+                    <span id="mesLN"></span>
+                </div>
+            </div>
+            <div class="form-row justify-content-between">
+                <div class="col-md-6 text-center">
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" placeholder="Enter mail" id="email" name="email">
+                </div>
+
+                <div class="col-md-6  text-center">
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="text" placeholder="Enter Password" id="pws" name="psw">
+                </div>
+            </div>
+            <div class="form-row justify-content-between">
+                <div class="col-md-6 text-center">
+                    <label for="phone"><b>Mobile Number</b></label><br>
+                    <input type="number" placeholder="Enter number" id="num" name="phone">
+                    <span id="mesN"></span>
+                </div>
+
+                <div class="col-md-6  text-center">
+                    <label for="interest"><b>Interested Field</b></label><br>
+                    <input type="text" placeholder="Enter" id="interest" name="interest">
+                </div>
+            </div>
+            <div class="form-row justify-content-between">
+                <div class="col-md-6 text-center">
+                    <label for="city"><b>City</b></label><br>
+                    <input type="text" placeholder="City" name="city" id="city">
+                    <span id="mesC"></span>
+                </div>
+
+                <div class="col-md-6  text-center">
+                    <label for="state"><b>State</b></label><br>
+                    <input type="text" placeholder="State" name="state" id="state">
+                    <span id="mesS"></span>
+                </div>
+            </div>
+            <div class="form-row justify-content-start">
+                <div class="col-md-12 m-5 ">
+                    <button class="btn btn-primary" type="submit"   onclick="my()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    {% include 'footer.html' %}
+    <script type="javascript" src="{%   static 'backend/validForm.js' %}"></script>
+    <script>
+    function my(){
+        var Fname = document.getElementById("fname");
+    var Lname = document.getElementById("lname");
+    var mphone = document.getElementById("num");
+    var State = document.getElementById("state");
+    var City = document.getElementById("city");
+    if (!isNaN(Fname.value)) {
+        document.getElementById("mesFN").innerHTML = "<br>Enter valid name";
+        var color = "rgb(240, 17, 17)";
+        Fname.style.borderColor = color;
+    }
+    if (!isNaN(State.value)) {
+        document.getElementById("mesS").innerHTML = "<br>Enter valid state";
+        var color = "rgb(240, 17, 17)";
+        Fname.style.borderColor = color;
+    }
+    if (!isNaN(City.value)) {
+        document.getElementById("mesC").innerHTML = "<br>Enter valid city";
+        var color = "rgb(240, 17, 17)";
+        Fname.style.borderColor = color;
+    }
+    if (!isNaN(Lname.value)) {
+        document.getElementById("mesLN").innerHTML = "<br>Enter valid name ";
+        var color = "rgb(240, 17, 17)";
+        Lname.style.borderColor = color;
+    }
+    if (mphone.value.length != 10) {
+        var color = "rgb(240, 17, 17)";
+        mphone.style.borderColor = color;
+        document.getElementById("mesN").innerHTML = "<br>Enter valid mobile number";
+
+    }
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

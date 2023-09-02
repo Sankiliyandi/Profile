@@ -1,0 +1,13 @@
+table,
+tr,
+th,
+td {
+    border: 4px solid black;
+}
+
+
+/* th,
+td {
+    padding: 10px;
+    border: 4px solid black;
+} */

@@ -1,0 +1,31 @@
+body {
+    background-image: url('https://wi.wallpapertip.com/wsimgs/12-123953_green-textured-background-hd.jpg');
+    box-sizing: border-box;
+}
+
+h1,
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+table,
+tr,
+th,
+td {
+    margin: 15px;
+    padding: 10px;
+    font-size: 1.4rem;
+    color: white;
+    border-color: white;
+    font-family: sans-serif;
+}
+
+
+/* h3 {
+    color: white;
+} */

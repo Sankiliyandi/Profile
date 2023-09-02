@@ -1,0 +1,66 @@
+* {
+    color: aquamarine;
+}
+
+html {
+    background-color: rgb(49, 38, 38);
+}
+
+.model {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modelcontent {
+    background-color: rgb(49, 38, 38);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.ttable {
+    background-color: rgb(49, 38, 38);
+}
+
+th {
+    color: aliceblue;
+}
+
+tr {
+    color: aliceblue;
+}
+
+.flexbox {
+    background-color: rgb(49, 38, 38);
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.add,
+.save,
+.cancel {
+    color: black;
+    background-color: rgb(94, 233, 233);
+    border-radius: 10px;
+}
+
+.remove {
+    background-color: red;
+    border-radius: 10px;
+}
+
+input {
+    width: 80%;
+    border-radius: 10px;
+    border-color: aqua;
+    color: aquamarine;
+    background-color: rgb(49, 38, 38);
+}
