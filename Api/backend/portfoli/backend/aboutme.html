@@ -14,6 +14,7 @@
         body {
             background-image: url('https://png.pngtree.com/thumb_back/fh260/back_pic/03/80/06/3757c30a762387b.jpg');
             box-sizing: border-box;
+            overflow-x: hidden;
         }
         
         h1 {
@@ -60,6 +61,19 @@
             justify-content: center;
             align-items: center;
             color: blue;
+        }
+        .cont{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .ca{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: fit-content; height: fit-content;
         }
         /* img {
             width: 500px;
@@ -113,6 +127,41 @@
 
 
 
+        </div>
+    </div>
+    <div class="container row text-center">
+        <div class="container col-md-6  table-bordered text-center" style="width: fit-content; height: auto;">
+            <div class="p-3">
+                <img src="{% static 'backend/rideshare.png'%}" alt="" width="500" height="300">
+            </div>
+              
+            <div class="cont p-3 text-center">
+              <div class="ca table-bordered">
+                <p class="text-center">HTML</p>
+              </div>
+              <div class="table-bordered ca">
+                
+                <p>jquery</p>
+              </div>
+              <div class="table-bordered ca">
+                <p>Django</p>
+              </div>
+            </div>
+        </div>
+        <div class="container col-md-6  table-bordered " style="width: fit-content; height: auto;">
+            <div class="p-3">
+                <img  src="{% static 'backend/medics.png'%}" alt="" width="500" height="300" >
+            </div>
+              
+            <div class="cont p-3 text-center">
+              <div class="ca table-bordered">
+                <p class="text-center">Flutter</p>
+              </div>
+             
+              <div class="table-bordered ca">
+                <p>Django</p>
+              </div>
+            </div>
         </div>
     </div>
     <div class="container d-flex justify-content-center  my-4 table-bordered ">
