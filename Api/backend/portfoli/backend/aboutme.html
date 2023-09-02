@@ -72,9 +72,40 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            width: fit-content; height: fit-content;
+            align-content: center;
+            justify-content: center;
+            /* text-align: center; */
+           border: 1px white solid;
+           
         }
+        .con1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        p{
+            text-align: center;
+        }
+        .cont2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media  only screen and (max-width:550px) {
+            .im{
+         width: 300px;
+         height: 200px;
+}
+        }
+        @media  only screen and (mix-width:560px) {
+            .im{
+                width:500px; 
+        height:300px;
+}
+        }
+      
+      
         /* img {
             width: 500px;
             height: 300px;
@@ -129,41 +160,49 @@
 
         </div>
     </div>
-    <div class="container row text-center">
-        <div class="container col-md-6  table-bordered text-center" style="width: fit-content; height: auto;">
-            <div class="p-3">
-                <img src="{% static 'backend/rideshare.png'%}" alt="" width="500" height="300">
+    <div class="cont2 m-3">
+        <hr>
+        <h1>Projects</h1>
+        <hr>
+    </div>
+    <div class="con1">
+        <div class="container row text-center">
+            <div class="container col-md-6  table-bordered text-center" style="width: fit-content; height: auto;">
+                <div class="p-3">
+                    <img class="im" src="{% static 'backend/rideshare.png'%}" alt="" >
+                </div>
+                  
+                <div class="cont p-3 text-center">
+                  <div class="ca table-bordered p-2">
+                    <p class="text-center">HTML</p>
+                  </div>
+                  <div class="ca p-2">
+                    
+                    <p>jquery</p>
+                  </div>
+                  <div class="table-bordered ca p-2">
+                    <p>Django</p>
+                  </div>
+                </div>
             </div>
-              
-            <div class="cont p-3 text-center">
-              <div class="ca table-bordered">
-                <p class="text-center">HTML</p>
-              </div>
-              <div class="table-bordered ca">
-                
-                <p>jquery</p>
-              </div>
-              <div class="table-bordered ca">
-                <p>Django</p>
-              </div>
-            </div>
-        </div>
-        <div class="container col-md-6  table-bordered " style="width: fit-content; height: auto;">
-            <div class="p-3">
-                <img  src="{% static 'backend/medics.png'%}" alt="" width="500" height="300" >
-            </div>
-              
-            <div class="cont p-3 text-center">
-              <div class="ca table-bordered">
-                <p class="text-center">Flutter</p>
-              </div>
-             
-              <div class="table-bordered ca">
-                <p>Django</p>
-              </div>
+            <div class="container col-md-6  table-bordered " style="width: fit-content; height: auto;">
+                <div class="p-3">
+                    <img class="im" src="{% static 'backend/medics.png'%}" alt="" width="500" height="300" >
+                </div>
+                  
+                <div class="cont p-3 text-center">
+                  <div class="ca table-bordered p-2" >
+                    <p class="text-center">Flutter</p>
+                  </div>
+                 
+                  <div class="table-bordered ca p-2">
+                    <p>Django</p>
+                  </div>
+                </div>
             </div>
         </div>
     </div>
+  
     <div class="container d-flex justify-content-center  my-4 table-bordered ">
         <table class="table ">
             <tr>
